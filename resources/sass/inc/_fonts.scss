@@ -1,0 +1,12 @@
+@import "mixin";
+
+@include font-face(SpaceCode, normal, 400, '../fonts/logo-webfont');
+@include font-face(Sailec Medium, normal, 400, '../fonts/sailec-medium-webfont');
+
+@font-face {
+  font-family: themify;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/themify.woff') format('woff'), url('../fonts/themify.ttf') format('truetype'), url('../fonts/themify.svg') format('svg');
+  font-display: swap;
+}

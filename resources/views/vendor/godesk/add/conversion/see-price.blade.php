@@ -1,0 +1,1 @@
+<a class="see-prices btn btn-success" href="{{ GoDesk::urlById('page', 16, $entity->locale) }}" id="seePriceButton">{{ __('See Approximate Prices') }}</a>

@@ -1,0 +1,1 @@
+@include('godesk::partials.logo')

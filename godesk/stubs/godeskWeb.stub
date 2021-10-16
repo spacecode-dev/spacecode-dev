@@ -1,0 +1,16 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| GoDesk Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your goDesk application. These
+| routes are loaded by the GoDeskServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+

@@ -1,0 +1,15 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class GoDeskDatabaseSeeder extends Seeder
+{
+    public function run()
+    {
+        $this->call(GoDeskSettingsSeeder::class);
+        $this->call(GoDeskRolesSeeder::class);
+        $this->call(GoDeskPermissionsSeeder::class);
+        $this->call(GoDeskUsersSeeder::class);
+        $this->call(GoDeskPagesSeeder::class);
+    }
+}

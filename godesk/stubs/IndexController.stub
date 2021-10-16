@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Http\Request;
+use Illuminate\View\View as ViewModel;
+use SpaceCode\GoDesk\Http\Controllers\IndexController as GoDeskIndexController;
+use SpaceCode\GoDesk\Models\RequestForm;
+
+class IndexController extends GoDeskIndexController
+{
+    /**
+     * IndexController constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct($settings ?? false);
+    }
+
+    /**
+     * @param $slug
+     * @return Factory|ViewModel
+     */
+    public function index($slug = null): object
+    {
+        $entity = parent::index($slug);
+        $entity->indexClasses = [];
+        return view($entity->indexView, ['entity' => $entity]);
+    }
+}

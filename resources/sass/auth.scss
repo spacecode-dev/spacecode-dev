@@ -1,0 +1,22 @@
+body {
+  &.auth {
+    label.block {
+      font-size: .85rem;
+    }
+    .text-base {
+      font-size: .85rem;
+      margin-top: 2px;
+    }
+    .add {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+      font-size: .875rem;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
